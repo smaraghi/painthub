@@ -8,6 +8,14 @@
     width: 30%;
 }
 
+#bio{
+    border: 1px solid black;
+    padding: 35px;
+    margin: 50px;
+    margin-top: 20%;
+}
+
 .right-panel{
     float: right;
 }
+
