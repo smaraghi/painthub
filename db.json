@@ -1,0 +1,18 @@
+{
+    "painter": [
+      { "id": 1, "name": "Sahand", "bio": "Producing art keeps me patient, open and hungry for more knowledge, for more understanding and above all else for self expression!" }
+
+    ],
+    "paintings": [
+      { "id": 1, "title": "Grandfather Mountain", "image": "https://cdn.artcld.com/img/w_2000,c_fit/n6i16fjc9y8xu9rrdpmp.jpg", "painterId": 1 },
+      { "id": 2, "title": "Two Old Friends", "image": "https://cdn.artcld.com/img/w_2000,c_fit/hhokycuk1rkgzh2rwgqu.jpg", "painterId": 1 },
+      { "id": 3, "title": "Bloody Brooklyn I", "image": "https://cdn.artcld.com/img/w_2000,c_fit/tvgibsnhkjhlmwhotjvj.jpg", "painterId": 1 },
+      { "id": 4, "title": "Chasing Light by the Chattahoochee", "image": "https://cdn.artcld.com/img/w_2000,c_fit/t7bj5s5uxa4iqdubc099.jpg", "painterId": 1 },
+      { "id": 5, "title": "Conifer Colorado", "image": "https://cdn.artcld.com/img/w_2000,c_fit/zpzstdtldxfzzmqeyt8o.jpg", "painterId": 1 },
+      { "id": 6, "title": "Blue Ridge Parkway", "image": "https://cdn.artcld.com/img/w_2000,c_fit/ewx3rpg17950lkp7rg6i.jpg", "painterId": 1 },
+      { "id": 7, "title": "Roussillon Ochre Mines", "image": "https://uc26d2914668bfe573b790fb7b52.previews.dropboxusercontent.com/p/thumb/AAXxgEiMO-FORI7M4TqpmH4odmvvfnISgoB1JQeb2LGZoxwjdEKk6DctwPK6j9v2kQa8k8XshHvz7UI2VpbUQOWyAgsOUl880WmnAM5b9WKs2buWEeRT-qUQYMv1RylzQ5gwtmOXGaBP_dT1HW7ZoOqG33I295crG3c_vJgP9U_QPPKn_u6GGV-g-hDevwDiR_V2j2LHrMDSee74Xkf8miKvh3lQUFrB-EinxIl3yTQ6ixs1v2b2AKPMj0tVqGTxP0o0Cj401vH8HXfNaBAZk1-yinfGirXRqgxRPbJ-RMTdVw/p.jpeg?size_mode=5", "painterId": 1 },
+      { "id": 8, "title": "Die Wei Rose", "image": "https://uc6f19bf94f087ad47f807c72fc9.previews.dropboxusercontent.com/p/thumb/AAVo3GQSwPlnFLEeGh1MjmJiNT0J1Tp4QyTkB6Ta8sA9du--g8tyOWvxCF8urArDO3zizOGQweeJZu3BBGje9068NKrmyWEKnfj9lEcRsrbk0UXU89UVwCaLkPe6wFeQCDRV9IuM4_p7PnZquyZWIY-2m4qtBVGEctRkzH-Q5lJ2jUUE5A8I8u3Y0Qze6SK1SnyQpr6sdy9RrKre9PeTnG3NRr6NI3XpdIp1jdQ9Fuc4Cx2No31CzUzFlolefC_AmHzd02Qj3VBtlxGzssjIHqB6/p.jpeg?size_mode=5", "painterId": 1 },
+      { "id": 9, "title": "Village of Murs", "image": "https://uc69746a018250b507f0dd89d294.previews.dropboxusercontent.com/p/thumb/AAV5KXzjW28SwBS_VzWECb8x7t65iFjqSFnLpSyDWm0iPgf0ON0eE3RtE75J6p6mWp6h2iIQ9AozGa7B2PMzRPzRGMABzmH0GdSPvWoFA19onLZtRVjxeS11N_EVYYpCqAmrCCNNiSkdkdnL6_vtlmGRKhXD9rqpxEFW6L4P_7eFOA6t7JdF9Z6dGiPI9Wq-rHPpJVQE5zsKue0emeozAOok6-F6hU5ouPtNRHds1g3_VJeSYGqqqeSxcXr8rE8iv5OllUgfOl9fXd2Q8yq1yQQjyDC_q4CN0-zeWvoRBBjZHA/p.jpeg?size_mode=5", "painterId": 1 },
+      { "id": 10, "title": "Die we Rose V2", "image": "https://uc27ad033c73a92875bb2ffd93d4.previews.dropboxusercontent.com/p/thumb/AAUTUN2xIsfTYkrwwgjvNSqM6DVbJp4HQWOpVf6sJEm5_6pLT39onhm-Nm3iq0NKjlETpiCK636lGWAQYE3F9guPNNh7k0gw3Db16zuODnH_NfzBom0X0Qfix0qmyj0Sr6b7PhAOGWIxIiEAOkw5JDAtu5OHg8z0Itxl3-coGvOx1Y2DyWpsgvwjWi8byJy1IKd_dlacxdW86HqXXG4ahtbE7RvBFnjHKhryNPE98a5GU25uRQ7JnRUzwv2i4yc2lJvKAq-OSt0wDHFvan0Yjpw-Al5TkEPIVUkr7XIYgGTQfw/p.jpeg?size_mode=5", "painterId": 1 }
+    ]
+  }
