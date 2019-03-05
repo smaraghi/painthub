@@ -1,0 +1,13 @@
+.main{
+    width: 100%;
+    overflow: auto;
+}
+
+.left-panel{
+    float: left;
+    width: 30%;
+}
+
+.right-panel{
+    float: right;
+}
