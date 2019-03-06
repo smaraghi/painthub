@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Sahand",
-      "bio": "hey",
+      "bio": "hello",
       "contact": "SahandV.art@gmail.com"
     }
   ],
@@ -37,6 +37,12 @@
       "title": "Blue Ridge Parkway",
       "image": "https://cdn.artcld.com/img/w_2000,c_fit/ewx3rpg17950lkp7rg6i.jpg",
       "painterId": 1
+    },
+    {
+      "title": "Test",
+      "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
+      "painterId": "1",
+      "id": 7
     }
   ]
 }

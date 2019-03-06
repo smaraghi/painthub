@@ -73,8 +73,8 @@ function updatePainter(painter) {
     let painterBio = document.getElementsByClassName('painter-bio')[0]
     let painterContact = document.getElementsByClassName('painter-contact')[0]
  
-    painterBio.value = painter.bio
-    painterContact.value = painter.contact
+    painterBio.innerText = painter.bio
+    painterContact.innerText = painter.contact
 }
 
 //---------------------------- Painting functions below ----------------------------------//
