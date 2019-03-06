@@ -41,12 +41,12 @@ function renderPainter(painter){
 }
 
 function editPainterBio(){
-
-    let id = $("#form-id").val()
+ 
+    let id = document.getElementById('form-id').value
 
     let data = {
-        bio: $("#form-bio").val(), 
-        contact: $("#form-contact").val()
+        bio: document.getElementById('form-bio').value,
+        contact: document.getElementById('form-contact').value
     }
 
     fetch(`http://localhost:3000/painter/${id}`, {
@@ -58,7 +58,7 @@ function editPainterBio(){
         body: JSON.stringify(data)
     }).then(res => res.json())
     .then(json => updatePainter(json))
-
+    
 }
 
 function updatePainter(painter) {
@@ -96,7 +96,9 @@ function renderAllPaintings(painting) {
     paintingDiv.append(img, h4)
     rightPanel.appendChild(paintingDiv)
 
-    // paintingDiv.addEventListener('click', deletePainting)
+    paintingDiv.addEventListener('click', () => {deletePainting(painting)
+        paintingDiv.remove()
+    })
 }
 
 function addPainting(){
@@ -120,7 +122,8 @@ function addPainting(){
 
 }
 
-// function renderPainting() {
-
-// }
-
+function deletePainting(painting) {
+    fetch(`http://localhost:3000/paintings/${painting.id}`, {
+        method: "DELETE"
+    })
+}

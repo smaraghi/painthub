@@ -3,17 +3,11 @@
     {
       "id": 1,
       "name": "Sahand",
-      "bio": "Producing art keeps me patient, open and hungry for more knowledge, for more understanding and above all else for self expression!",
+      "bio": "mac",
       "contact": "SahandV.art@gmail.com"
     }
   ],
   "paintings": [
-    {
-      "id": 1,
-      "title": "Grandfather Mountain",
-      "image": "https://cdn.artcld.com/img/w_2000,c_fit/n6i16fjc9y8xu9rrdpmp.jpg",
-      "painterId": 1
-    },
     {
       "id": 2,
       "title": "Two Old Friends",
