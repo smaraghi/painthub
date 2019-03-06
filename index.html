@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
         <script src="https:///code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
         <div id="tabs">
@@ -34,7 +35,7 @@
             </div>
 
             <div id="update-info">
-                <form id="painter-form" onsubmit="editPainterBio()">
+                <form id="painter-form">
                     <textarea id="form-bio" rows="4" cols="50" name="bio" form="painter-form">Enter bio here...</textarea>
                     <br>
                     <input id="form-contact" type="text" size="35" name="contact" placeholder="email">
@@ -45,7 +46,7 @@
             </div>
 
             <div id="add-painting">
-                <form id="add-painting-form" onsubmit="addPainting()">
+                <form id="add-painting-form">
                     <input id="form-title" type="text" size="35" name="title" placeholder="Title">
                     <br>
                     <input id="form-image" type="text" size="100" name="image" placeholder="Image URL">

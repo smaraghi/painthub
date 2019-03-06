@@ -3,12 +3,19 @@ document.addEventListener("DOMContentLoaded", init)
 function init() {
     getPainter()
     getPaintings()
+
+    let updateForm = document.getElementById("painter-form")
+    updateForm.addEventListener('submit', editPainterBio)
+
+    let addForm = document.getElementById("add-painting-form")
+    addForm.addEventListener('submit', addPainting)
+
 }
 
 function getPainter(){
     fetch("http://localhost:3000/painter")
     .then(res => res.json())
-    .then(json => renderPainter(json))
+    .then(renderPainter)
 }
 
 function renderPainter(painter){
@@ -40,8 +47,8 @@ function renderPainter(painter){
 
 }
 
-function editPainterBio(){
- 
+function editPainterBio(e){
+    e.preventDefault()
     let id = document.getElementById('form-id').value
 
     let data = {
@@ -57,7 +64,7 @@ function editPainterBio(){
         },
         body: JSON.stringify(data)
     }).then(res => res.json())
-    .then(json => updatePainter(json))
+    .then(updatePainter)
     
 }
 
@@ -73,15 +80,15 @@ function updatePainter(painter) {
 //---------------------------- Painting functions below ----------------------------------//
 
 function getPaintings() {
-    
     fetch("http://localhost:3000/paintings")
     .then(res => res.json())
-    .then(painting => painting.forEach(renderAllPaintings))
+    .then(paintings => paintings.forEach(renderAllPaintings))
 }
 
 function renderAllPaintings(painting) {
     
     let rightPanel = document.getElementsByClassName("right-panel")[0]
+
     let paintingDiv = document.createElement('div')
     let h4 = document.createElement('h4')
     let img = document.createElement('img')
@@ -95,10 +102,11 @@ function renderAllPaintings(painting) {
 
     paintingDiv.append(img, h4)
     rightPanel.appendChild(paintingDiv)
-
+    
     paintingDiv.addEventListener('click', () => {deletePainting(painting)
         paintingDiv.remove()
     })
+
 }
 
 function addPainting(){
@@ -118,7 +126,7 @@ function addPainting(){
         },
         body: JSON.stringify(data)
     }).then(res => res.json())
-    .then(painting => renderAllPaintings(painting))
+    .then(renderAllPaintings)
 
 }
 
