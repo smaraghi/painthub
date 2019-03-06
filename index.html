@@ -45,7 +45,14 @@
             </div>
 
             <div id="add-painting">
-                La Calombe Rocks
+                <form id="add-painting-form" onsubmit="addPainting()">
+                    <input id="form-title" type="text" size="35" name="title" placeholder="Title">
+                    <br>
+                    <input id="form-image" type="text" size="100" name="image" placeholder="Image URL">
+                    <br>
+                    <input id="form-painter-id" type="hidden" value="1">
+                    <input type="submit" value="Submit">
+                </form>
             </div>
          </div>
 

@@ -41,8 +41,9 @@ function renderPainter(painter){
 }
 
 function editPainterBio(){
+
     let id = $("#form-id").val()
-    
+
     let data = {
         bio: $("#form-bio").val(), 
         contact: $("#form-contact").val()
@@ -69,14 +70,16 @@ function updatePainter(painter) {
     painterContact.value = painter.contact
 }
 
+//---------------------------- Painting functions below ----------------------------------//
+
 function getPaintings() {
     
     fetch("http://localhost:3000/paintings")
     .then(res => res.json())
-    .then(painting => painting.forEach(renderPaintings))
+    .then(painting => painting.forEach(renderAllPaintings))
 }
 
-function renderPaintings(painting) {
+function renderAllPaintings(painting) {
     
     let rightPanel = document.getElementsByClassName("right-panel")[0]
     let paintingDiv = document.createElement('div')
@@ -90,11 +93,34 @@ function renderPaintings(painting) {
     h4.innerText = painting.title
     img.src = painting.image
 
-
     paintingDiv.append(img, h4)
     rightPanel.appendChild(paintingDiv)
 
-
     // paintingDiv.addEventListener('click', deletePainting)
 }
+
+function addPainting(){
+    event.preventDefault()
+    
+    let data = {
+        title: document.getElementById('form-title').value,
+        image: document.getElementById('form-image').value,
+        painterId: document.getElementById('form-painter-id').value
+    }
+
+    fetch("http://localhost:3000/paintings", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+    }).then(res => res.json())
+    .then(painting => renderAllPaintings(painting))
+
+}
+
+// function renderPainting() {
+
+// }
 
