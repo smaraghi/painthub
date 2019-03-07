@@ -29,6 +29,11 @@
     width: 60%
 }
 
+.painting-title {
+    text-align: center;
+    padding-right: 250px;
+}
+
 .painting-img{
     border: 1px solid black;
     padding: 35px;
