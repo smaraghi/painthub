@@ -2,64 +2,78 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>PaintHub</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https:///code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <div id="tabs">
-            <ul>
-                <li><a href="#home"><span>Home</span></a></li>
-                <li><a href="#update-info"><span>Update Info</span></a></li>
-                <li><a href="#add-painting"><span>Add Painting</span></a></li>
-            </ul>
-            <div id="home">
-                <div class="main">
-                    <div class="left-panel">
-                        <div id="bio">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="update-tab" data-toggle="tab" href="#update" role="tab" aria-controls="update" aria-selected="false">Update Artist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="add-tab" data-toggle="tab" href="#add" role="tab" aria-controls="add" aria-selected="false">Add Painting</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div id="home">
+                    <div class="main">
+                        <div class="left-panel">
+                            <div id="bio">
+                            </div>
+            
+                            <div id="video">
+                                <video class="video" controls>
+                                    <source src="./public/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
-        
-                        <div id="video">
-                            <video class="video" controls>
-                                <source src="./public/video.mp4" type="video/mp4">
-                            </video>
+            
+                        <div class="right-panel">
                         </div>
-                    </div>
-        
-                    <div class="right-panel">
                     </div>
                 </div>
             </div>
 
-            <div id="update-info">
-                <form id="painter-form">
-                    <textarea id="form-bio" rows="4" cols="50" name="bio" form="painter-form">Enter bio here...</textarea>
-                    <br>
-                    <input id="form-contact" type="text" size="35" name="contact" placeholder="email">
-                    <br>
-                    <input type="hidden" id="form-id" value="">
-                    <input class="sub-btn" type="submit" value="Submit">
-                </form> 
+            <div class="tab-pane fade" id="update" role="tabpanel" aria-labelledby="profile-tab">
+                <div id="update-info">
+                    <form id="painter-form">
+                        <textarea id="form-bio" rows="4" cols="50" name="bio" form="painter-form">Enter bio here...</textarea>
+                        <br>
+                        <input id="form-contact" type="text" size="35" name="contact" placeholder="email">
+                        <br>
+                        <input type="hidden" id="form-id" value="">
+                        <input class="sub-btn" type="submit" value="Submit">
+                    </form> 
+                </div>
             </div>
 
-            <div id="add-painting">
-                <form id="add-painting-form">
-                    <input id="form-title" type="text" size="35" name="title" placeholder="Title">
-                    <br>
-                    <input id="form-image" type="text" size="100" name="image" placeholder="Image URL">
-                    <br>
-                    <input id="form-painter-id" type="hidden" value="1">
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="contact-tab">
+                <div id="add-painting">
+                    <form id="add-painting-form">
+                        <input id="form-title" type="text" size="35" name="title" placeholder="Title">
+                        <br>
+                        <input id="form-image" type="text" size="100" name="image" placeholder="Image URL">
+                        <br>
+                        <input id="form-painter-id" type="hidden" value="1">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
-         </div>
+        </div>
 
         <script src="./src/index.js"></script>
-        <script>
-            $( "#tabs" ).tabs();
-        </script>
+         <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
